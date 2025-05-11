@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards & Incentives Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="text-green-600 text-xl font-bold">E-Waste Oasis</div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-green-600">Home</a>
+                    <a href="/rewards" class="text-gray-600 hover:text-green-600">Rewards</a>
+                    <a href="/pickup" class="text-gray-600 hover:text-green-600">Schedule Pickup</a>
+                    <a href="#" class="text-gray-600 hover:text-green-600">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-4 bg-gradient-to-br from-yellow-50 to-orange-50 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">Rewards & Incentives</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Earn rewards for responsible recycling and track your progress!</p>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-semibold">Your Points</h3>
+                <div class="text-5xl text-green-600 font-bold mt-2">1,250</div>
+            </div>
+            
+            <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-semibold">How to Earn</h3>
+                <ul class="text-gray-600 mt-2">
+                    <li>♻️ Recycle E-Waste (+100 pts)</li>
+                    <li>📢 Share Awareness (+50 pts)</li>
+                    <li>✅ Complete Quizzes (+75 pts)</li>
+                </ul>
+            </div>
+            
+            <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-semibold">Redemption Options</h3>
+                <ul class="text-gray-600 mt-2">
+                    <li>🎟️ Gift Vouchers</li>
+                    <li>💳 Discounts</li>
+                    <li>🌱 Donations</li>
+                </ul>
+            </div>
+            
+            <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-semibold">Leaderboard</h3>
+                <p class="text-gray-600">Top recyclers this month</p>
+                <ol class="text-gray-600 mt-2">
+                    <li>🏆 Alex - 3,000 pts</li>
+                    <li>🥈 Sam - 2,750 pts</li>
+                    <li>🥉 Jordan - 2,500 pts</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="text-center py-12">
+        <button class="px-6 py-3 bg-green-600 text-white font-bold text-lg rounded-md hover:bg-green-700 mx-2">Redeem Now</button>
+        <button class="px-6 py-3 bg-blue-600 text-white font-bold text-lg rounded-md hover:bg-blue-700 mx-2">Learn How to Earn More</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 text-center">
+        <p>&copy; 2025 E-Waste Oasis. All rights reserved.</p>
+    </footer>
+</body>
+</html>

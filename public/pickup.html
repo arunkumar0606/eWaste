@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Pickup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="text-green-600 text-xl font-bold">E-Waste Oasis</div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-green-600">Home</a>
+                    <a href="/how" class="text-gray-600 hover:text-green-600">How It Works</a>
+                    <a href="/pickup" class="text-gray-600 hover:text-green-600">Schedule Pickup</a>
+                    <a href="#" class="text-gray-600 hover:text-green-600">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-4 bg-gradient-to-br from-green-50 to-blue-50 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">Schedule Your Pickup</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Fill in the details below to schedule an e-waste pickup.</p>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto max-w-2xl bg-white p-8 shadow-md rounded-lg">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Pickup Details</h2>
+            <form action="/confirmation" method="GET">
+                <!-- User Details -->
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold">Name</label>
+                    <input type="text" class="w-full p-2 border rounded-md" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold">Email</label>
+                    <input type="email" class="w-full p-2 border rounded-md" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold">Phone Number</label>
+                    <input type="tel" class="w-full p-2 border rounded-md" placeholder="Enter your phone number" required>
+                </div>
+                
+                <!-- Pickup Details -->
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold">Address</label>
+                    <textarea class="w-full p-2 border rounded-md" placeholder="Enter your address" required></textarea>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold">Preferred Pickup Date & Time</label>
+                    <input type="datetime-local" class="w-full p-2 border rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold">Type of E-Waste</label>
+                    <select class="w-full p-2 border rounded-md">
+                        <option>Small Electronics</option>
+                        <option>Large Appliances</option>
+                        <option>Batteries</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                
+                <!-- Confirmation -->
+            
+                <button class="w-full py-3 bg-green-600 text-white font-bold text-lg rounded-md hover:bg-green-700">Confirm Pickup</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Assurance Note -->
+    <section class="text-center py-8">
+        <p class="text-gray-600 max-w-xl mx-auto">We ensure safe and certified disposal of your e-waste, adhering to environmental standards.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 text-center">
+        <p>&copy; 2025 E-Waste Oasis. All rights reserved.</p>
+    </footer>
+</body>
+</html>
