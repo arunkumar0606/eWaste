@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
 const path = require('path');
 const serverless = require("serverless-http");
 
@@ -27,11 +26,6 @@ app.get('/pickup', (req, res) => {
   app.get('/confirmation', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'home.html'));
   });
-
-
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
 
 
 module.exports.handler = serverless(app);
