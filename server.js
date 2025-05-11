@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 const path = require('path');
+const serverless = require("serverless-http");
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -31,3 +32,6 @@ app.get('/pickup', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+
+module.exports.handler = serverless(app);
